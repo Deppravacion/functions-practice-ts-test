@@ -21,6 +21,16 @@
 
 // Your code goes here...
 
+import { Mytype } from "./e14";
+
+export const isOneOfThemOrTheirSumForty = ({num1, num2}: Mytype): boolean => {
+  let result: boolean = false
+  if (num1 + num2 == 40  || num1 == 40 || num2 == 40) {
+    result = true
+  }
+  return result
+}
+
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-15"
 // If the test has all tests passed, switch to the next exercise file

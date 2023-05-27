@@ -8,11 +8,11 @@
  */
 
 // Refactor the functions in the code beneath...
-const logSecondsUpToMax = function (max) {
-  let i = 0;
+export const logSecondsUpToMax = (max: number) => {
+  let i: number = 1;
   const timer = setInterval(function () {
-    if (i < max) {
-      console.log(++i);
+    if (i <= max) {
+      console.log(i++);
     } else {
       clearInterval(timer);
     }

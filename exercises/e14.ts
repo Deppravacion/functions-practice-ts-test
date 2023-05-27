@@ -19,6 +19,21 @@
 
 // Your code goes here
 
+export type Mytype = { 
+  num1: number
+  num2: number
+}
+
+export const sumOfTwoIntegers = ({num1, num2}: Mytype):number => {
+  let result: number = 0
+  if (num1 == num2) {
+    result = 3 * (num1 + num2)
+  } else {
+    result = num1 + num2
+  }
+  return result
+}
+
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-14"
 // If the test has all tests passed, switch to the next exercise file

@@ -22,6 +22,19 @@
 
 // Your code goes here...
 
+
+export function doesArrayIncludeItemsBetweenVals({arr, val1, val2}: {arr: [], val1: number, val2: number}): boolean {
+  let result: boolean = false
+  for (let i: number = 0; i < arr.length; i++) {
+    if ( arr[i] > val1 && arr[i] < val2) {
+      result = true
+    }
+  }  
+  return result
+}
+
+
+
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
 // If the test has all tests passed, switch to the next exercise file

@@ -21,6 +21,9 @@
  */
 
 // Your function code starts here...
+export const rectArea = ({sideA, sideB}: {sideA: number, sideB: number}): number => {
+  return sideA * sideB
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-5"

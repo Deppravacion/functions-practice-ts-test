@@ -16,6 +16,13 @@
 
 // Your code goes here...
 
+export interface Myface<T> {
+  age: number
+}
+
+export const personAge = <T>({age}: Myface<T>): number => {
+  return age
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
 // If the test has all tests passed, switch to the next exercise file

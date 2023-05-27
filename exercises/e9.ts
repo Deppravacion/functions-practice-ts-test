@@ -15,7 +15,28 @@
  */
 
 // Your code goes here...
+export const splitFirstAndLastNames = (str: string): string[] => {
+  let splStr: string[] = str.split('')
+  let result: string[] = []
+  let subStr1: string = ''
+  let subStr2: string = ''
+  let spaceIndex: number = 0
 
+
+  for (let j: number = 0; j < splStr.length; j++) {
+    if (splStr[j].charCodeAt(0) === 32) {
+      spaceIndex = j
+    }
+  }
+  for (let i: number = 0; i < splStr.length; i++) {
+    if (i < spaceIndex) {
+      subStr1 += `${splStr[i]}`
+    } else if ( i > spaceIndex) {
+      subStr2 += `${splStr[i]}`
+    }
+  }
+  return result = [subStr1, subStr2]
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"
 // If the test has all tests passed, switch to the next exercise file

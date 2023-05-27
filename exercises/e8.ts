@@ -20,6 +20,21 @@
  */
 
 // Your code goes here...
+export function getValueWithConditionOne({num1, num2}: {num1: number, num2: number}): number {
+  let result: number = 0
+  return result = ( num1 === 40 && num2 === 40) ? num1 + num2 : 2 * (num1 +num2)
+}
+
+export const getValueWithConditionTwo = ({num1, num2}: {num1: number, num2: number}): number => {
+  let result: number = 0
+  return result = ( num1 === 40 && num2 === 40) ? num1 + num2 : 2 * (num1 +num2)
+}
+
+export const getValueWithConditionThree = function ({num1, num2}: {num1: number, num2: number}): number {
+  let result: number = 0
+  return result = ( num1 === 40 && num2 === 40) ? num1 + num2 : 2 * (num1 +num2)
+}
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-8"

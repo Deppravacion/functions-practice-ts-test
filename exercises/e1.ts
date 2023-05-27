@@ -13,7 +13,9 @@
  */
 
 // Your code goes here
-
+export function logMessage() {
+  console.log(`Hello, World!`)
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

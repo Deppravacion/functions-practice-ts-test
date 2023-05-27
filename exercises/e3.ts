@@ -18,6 +18,9 @@
  */
 
 // Your code goes here...
+export function logMessageWithMyName(name: string): void {
+  console.log(`My name is ${name}!`)
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"

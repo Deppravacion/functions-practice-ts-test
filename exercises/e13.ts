@@ -17,6 +17,16 @@
 
 // Your code goes here...
 
+export const getDiffTwentySeven = (num: number): number => {
+  let result: number = 0
+  if (num <= 27) {
+    result = 27 - num
+  } 
+  if (27 < num) {
+    result =  2 * ( num - 27)
+  } 
+return result
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-13"
 // If the test has all tests passed, switch to the next exercise file

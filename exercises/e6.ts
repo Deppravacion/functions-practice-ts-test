@@ -7,6 +7,11 @@
  */
 
 // Your code goes here...
+export type TotalRoomsAreaArgs<T> = {
+  room1: number
+  room2: number
+  room3: number
+} 
 
 /**
  * @task
@@ -26,6 +31,11 @@
  */
 
 // Your code goes here...
+
+export function totalRoomsArea<T>({room1, room2, room3}: TotalRoomsAreaArgs<T>): number {
+  return room1 + room2 + room3
+}
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-6"

@@ -13,6 +13,19 @@
  * Example: isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  * !!! The function must be exported !!!
  */
+  // your code goes here...
+
+
+
+  export const isNameInArray = (arr: string[], name: string) => {
+    let result: boolean = false
+    for (const item of arr) {
+      if (item == name) {
+        result = true
+      }
+    }
+    return result
+  }
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-11"
